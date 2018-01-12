@@ -73,7 +73,7 @@ cargo install --git https://github.com/bobbin-rs/bobbin-cli.git
 highlight "Running" "bobbin check" "to check the installation"
 bobbin check
 
-highlight "Please check that the following lines are not 'Not Found'"
+highlight "Please check ABOVE the following lines are not 'Not Found'"
 highlight "Bobbin"      "\t> 0.8.0 \t" "if the version is lower, run 'cargo install --force bobbin'"
 highlight "Rust"        "\t> 1.25.0-nightly \t"
 highlight "Cargo"       "\t> 0.25.0-nightly \t"
@@ -87,4 +87,4 @@ highlight "Add rustup and cargo to your PATH, so run in you shell:" "\tsource ~/
 highlight "Add ARM toolchain to you PATH, so run in you shell:" "\texport PATH=\$PATH:$HOME/.armtoolchain/gcc-arm-none-eabi-7-2017-q4-major/bin"
 
 printf "\n"
-highlight "And yes, it is a smart move to put this stuff in your" ".profile" "(rustup does that by default, so a logout/login should suffice)"
+highlight "And yes, it is a smart move to put this stuff in your" ".profile" "(rustup does that by default, so all tools except the ARM toolchain should work after a logout/login)"
