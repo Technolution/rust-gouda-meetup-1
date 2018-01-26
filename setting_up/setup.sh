@@ -19,15 +19,19 @@ function highlight {
 }
 
 function cargo_install_helper {
+# $1 = the command to check
+# $2 = optional install method ('--git' for example)
+# $3 = crate name or git URL
+# $4 = description
     CMD="command -v $1"
     EXISTING_INSTALL=$($CMD)
     if [ "" != "$EXISTING_INSTALL" ]
     then
         highlight "Found existing" "$1" "at $EXISTING_INSTALL"
-        highlight "\tif neccessary upgrade with 'cargo install --force $2'"
+        highlight "\tif neccessary upgrade with 'cargo install --force $2 $3'"
     else
-        highlight "Installing (= building)" "$2" ", $3"
-        cargo install $2
+        highlight "Installing (= building)" "$3" ", $4"
+        cargo install $2 $3
     fi
 }
 
@@ -77,17 +81,17 @@ else
 fi
 
 # STEP 5: Installing Xargo
-cargo_install_helper xargo xargo "the cross compilation toolchain for Rust"
+cargo_install_helper xargo "" xargo "the cross compilation toolchain for Rust"
 
 # STEP 6: Installing bobbin-cli
-cargo_install_helper bobbin bobbin-cli "the embedded development tool for Rust"
+cargo_install_helper bobbin "--git" "git://github.com/egribnau/bobbin-cli"  "the embedded development tool for Rust"
 
 # STEP 7: Checking and informing about PATH
 highlight "Running" "bobbin check" "to check the installation"
 bobbin check
 
 highlight "Please check ABOVE the following lines are not 'Not Found'"
-highlight "Bobbin"      "\t> 0.8.0 \t" "if the version is lower, run 'cargo install --force bobbin'"
+highlight "Bobbin"      "\t> 0.8.1-dev \t" "if the version is lower, run 'cargo install --force --git git://github.com/egribnau/bobbin-cli'"
 highlight "Rust"        "\t> 1.25.0-nightly \t"
 highlight "Cargo"       "\t> 0.25.0-nightly \t"
 highlight "Xargo"       "\t> 0.3.10 \t" "if the version is lower, run 'cargo install --force xargo'"
