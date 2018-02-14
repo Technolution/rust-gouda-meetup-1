@@ -35,7 +35,7 @@ function cargo_install_helper {
     fi
 }
 
-# STEP 1: Rustup toolchain manager, rust compiler and cargo build tool
+# STEP 1: Rustup toolchain manager, Rust compiler and cargo build tool
 CARGO_ENV_FILE=~/.cargo/env
 if [ -e "$CARGO_ENV_FILE" ]
 then
@@ -51,18 +51,18 @@ else
 fi
 
 # STEP 2: Defaulting to the nightly compiler
-highlight "Selecting the" "rust nightly toolchain" "as default"
+highlight "Selecting the" "Rust nightly toolchain" "as default"
 rustup default nightly
 
 # STEP 3: Adding the Rust sources (needed by Xargo)
-highlight "Installing" "rust stdlib sources"
+highlight "Installing" "Rust stdlib sources"
 rustup component add rust-src
 
 # STEP 4: Installing the GNU Arm Embedded Toolchain
 export PATH=$PATH:"$HOME/.armtoolchain/gcc-arm-none-eabi-7-2017-q4-major/bin/"
 EXISTING_ARM_LOC=`command -v arm-none-eabi-ld`
 
-if [ -x $EXISTING_ARM_LOC ]
+if [ "" != "$EXISTING_ARM_LOC" ]
 then
     highlight "Found" "GNU Arm Embedded Toolchain" "at $EXISTING_ARM_LOC"
 else
