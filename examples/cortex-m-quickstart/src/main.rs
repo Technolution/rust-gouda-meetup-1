@@ -14,9 +14,11 @@ use cortex_m_semihosting::hio;
 fn main() {
     let mut loop_count = 0;
     loop {
-        let mut stdout = hio::hstdout().unwrap();
-        writeln!(stdout, "Hello, world {}!", loop_count).unwrap();
-        loop_count += 1;
+        if let Some(stdout) = hio::hstdout() {
+            writeln!(stdout, "Hello, world {}!", loop_count).unwrap();
+            loop_count += 1;
+
+        }
     }
 }
 
