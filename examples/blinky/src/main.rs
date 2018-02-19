@@ -58,7 +58,7 @@ unsafe fn led_off() {
 
 
 unsafe fn delay_ms(ms: usize) {
-    tick_delay(2_000 * ms);
+    tick_delay(500 * ms);
 }
 
 unsafe fn tick_delay(ticks: usize) {
