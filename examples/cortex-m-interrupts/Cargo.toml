@@ -1,0 +1,30 @@
+[package]
+name = "cortex-m-interrupts"
+version = "0.2.4"
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+description = "A template for building applications for ARM Cortex-M microcontrollers"
+keywords = ["arm", "cortex-m", "template"]
+categories = ["embedded", "no-std"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/japaric/cortex-m-quickstart"
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+lto = true
+debug = true
+
+[dependencies]
+stm32f103xx= {version = "0.7.0", features = ["rt"] }
+
+[dependencies.cortex-m]
+version = "0.3.0"
+
+[dependencies.cortex-m-rt]
+version = "0.3.12"
+features = ["abort-on-panic"]
+
+[dependencies.cortex-m-semihosting]
+version = "0.2.0"
