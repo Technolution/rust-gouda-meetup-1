@@ -14,7 +14,7 @@ use cortex_m_semihosting::hio;
 fn main() {
     let mut loop_count = 0;
     loop {
-        if let Some(stdout) = hio::hstdout() {
+        if let Ok(mut stdout) = hio::hstdout() {
             writeln!(stdout, "Hello, world {}!", loop_count).unwrap();
             loop_count += 1;
 
@@ -25,6 +25,6 @@ fn main() {
 // As we are not using interrupts, we just register a dummy catch all handler
 #[link_section = ".vector_table.interrupts"]
 #[used]
-static INTERRUPTS: [extern "C" fn(); 15] = [default_handler; 15];
+static INTERRUPTS: [extern "C" fn(); 240] = [default_handler; 240];
 
 extern "C" fn default_handler() {}
