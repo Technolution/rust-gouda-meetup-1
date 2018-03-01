@@ -27,9 +27,9 @@ Again, two choices:
 ### Install by hand
 Commands to be entered on the command line are shown like `this`.
 
-1. Rustup
+1. Install Rustup
     * install from https://rustup.rs
-2. Rust nightly compiler 
+2. Install the Rust nightly compiler 
     * `rustup toolchain add nightly`
 3. Select the nightly compiler as default 
     * `rustup default nightly`
