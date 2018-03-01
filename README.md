@@ -20,18 +20,34 @@ Again, two choices:
 2. do it by hand using the following guide:
 
 ### Install by hand
-1. Rustup - install from https://rustup.rs
-2. Rust nightly compiler - `rustup add nightly`
-3. Select the nightly compiler as default - `rustup default nightly`
-  or remember to set it as an override for every project during the workshop
-4. Install Xargo - `cargo install xargo`, to update `cargo install --force xargo`
-5. Install Bobbin (from a fork) -  `cargo install --git git://github.com/egribnau/bobbin-cli`
+Commands to be entered on the command line are shown like `this`.
+
+1. Rustup
+    * install from https://rustup.rs
+2. Rust nightly compiler 
+    * `rustup add nightly`
+3. Select the nightly compiler as default 
+    * `rustup default nightly`
+    * or remember to set it as an override for every project during the workshop
+4. Install Xargo 
+    * `cargo install xargo`
+    * to update `cargo install --force xargo`
+5. Install Bobbin (from my fork) 
+    * `cargo install --git git://github.com/egribnau/bobbin-cli`
+    * to update from my fork `cargo install --force --git git://github.com/egribnau/bobbin-cli`
 
 ### Install optional tools
 
 These tools are installed in the VM, but are optional:
 
-1. Visual Studio Code - install from <<link>>
-2. Rust Language Server - `rustup component add rls-preview rust-analysis rust-src`
+1. Visual Studio Code 
+    * install from https://code.visualstudio.com/
+2. Rust Language Server 
+    * `rustup component add rls-preview rust-analysis rust-src`
+    
+    
+## Fallback
+On March 5th, we will provide support if you cannot get the tools installed. 
+We will have a limited amount of USB-sticks with the VM available. 
 
 
