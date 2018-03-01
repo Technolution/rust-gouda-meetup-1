@@ -29,6 +29,7 @@ Commands to be entered on the command line are shown like `this`.
 
 1. Install Rustup
     * install from https://rustup.rs
+    * or update your Rust installation `rustup update`
 2. Install the Rust nightly compiler 
     * `rustup toolchain add nightly`
 3. Select the nightly compiler as default 
