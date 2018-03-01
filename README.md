@@ -50,6 +50,9 @@ These tools are installed in the VM, but are optional:
     * install from https://code.visualstudio.com/
 2. Rust Language Server 
     * `rustup component add rls-preview rust-analysis rust-src`
+3. Visual Studio Code RLS support
+    * install the _Rust (rls)_ addon package, typically by hitting Ctrl-P in Code and then entering `ext install rust (rls)`.
+    Install the top one. 
     
     
 ## Fallback
