@@ -30,7 +30,7 @@ Commands to be entered on the command line are shown like `this`.
 1. Rustup
     * install from https://rustup.rs
 2. Rust nightly compiler 
-    * `rustup add nightly`
+    * `rustup toolchain add nightly`
 3. Select the nightly compiler as default 
     * `rustup default nightly`
     * or remember to set it as an override for every project during the workshop
