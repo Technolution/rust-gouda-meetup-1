@@ -10,8 +10,14 @@ Note: for Windows users, please use the provided Virtual Machine
 
 ## Virtual Machine
 
+__DO THIS BEFORE MONDAY EVENING !!!__  (our WiFi is limited)
+
+
 The Virtual Machine was created with VirtualBox and was exported as an 'appliance'. 
-It can be downloaded from <<LINK HERE>>.
+It can be downloaded from 
+https://drive.google.com/file/d/1TfAphMpR1y5_x49XmqlXPShCpb18Xm5V/view?usp=sharing.
+
+
   
 ## Install the required tools
 
