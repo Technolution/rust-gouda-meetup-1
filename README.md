@@ -35,10 +35,15 @@ Commands to be entered on the command line are shown like `this`.
 3. Select the nightly compiler as default 
     * `rustup default nightly`
     * or remember to set it as an override for every project during the workshop
-4. Install Xargo 
+4. (NEW) Install the GNU ARM Embedded toolchain
+    * from https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+    * put the bin directory in your $PATH
+5. (NEW) Install dfu-util using your platform's package manager
+    * on Debian-like systems: `sudo apt install dfu-util`
+6. Install Xargo 
     * `cargo install xargo`
     * to update `cargo install --force xargo`
-5. Install Bobbin (from my fork) 
+7. Install Bobbin (from my fork) 
     * `cargo install --git git://github.com/egribnau/bobbin-cli`
     * to update from my fork `cargo install --force --git git://github.com/egribnau/bobbin-cli`
 
