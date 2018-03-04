@@ -40,6 +40,7 @@ Commands to be entered on the command line are shown like `this`.
     * put the bin directory in your $PATH
 5. (NEW) Install dfu-util using your platform's package manager
     * on Debian-like systems: `sudo apt install dfu-util`
+    * on macOS, you can use homebrew: `brew install dfu-util`
 6. Install Xargo 
     * `cargo install xargo`
     * to update `cargo install --force xargo`
