@@ -16,6 +16,12 @@ __DO THIS BEFORE MONDAY EVENING !!!__  (our WiFi is limited)
 The Virtual Machine was created with VirtualBox and was exported as an 'appliance'. 
 It can be downloaded from https://goo.gl/9EJEx3.
 
+Some facts about the VM:
+* based on Ubuntu 17.10
+* automatically logs in to the 'rustacean' account
+* that account's password is 'rust'
+* which allows you to do 'sudo'
+* it has the entiry toolchain installed
 
   
 ## Install the required tools
