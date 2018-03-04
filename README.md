@@ -28,7 +28,7 @@ Some facts about the VM:
 
 Again, two choices:
 1. use the scripts in the setting_up directory in this repo (Linux only)
-    * for Ubuntu-like system run the 'install_ubuntu_packages.sh' script, on other systems look in that file and install the neccessary dependencies
+    * for Ubuntu-like system run the 'install_ubuntu_packages.sh' script, on other systems look in that file and install the necessary dependencies
     * run 'setup.sh' (this script can be run multiple times)
 2. do it by hand using the following guide:
 
