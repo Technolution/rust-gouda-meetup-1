@@ -17,13 +17,13 @@ lto = true
 debug = true
 
 [dependencies]
-stm32f103xx= {version = "0.7.0", features = ["rt"] }
+stm32f103xx= {version = "0.8.0", features = ["rt"] }
 
 [dependencies.cortex-m]
-version = "0.3.0"
+version = "0.4.3"
 
 [dependencies.cortex-m-rt]
-version = "0.3.12"
+version = "0.3.13"
 features = ["abort-on-panic"]
 
 [dependencies.cortex-m-semihosting]

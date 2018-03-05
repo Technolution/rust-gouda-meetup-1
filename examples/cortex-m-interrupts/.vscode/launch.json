@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "bmp",
+            "showDevDebugOutput": false,
+            "cwd": "${workspaceRoot}",
+            "executable": "./target/thumbv7m-none-eabi/debug/cortex-m-interrupts",
+            "name": "Debug (Black Magic Probe)",
+            "device": "STM32F103RB",
+            // find the serial port to use using 'bobbin info' and look for the "GDB Device"
+            "BMPGDBSerialPort": "/dev/cu.usbmodemDEE6C8C1",
+            "targetId": 1
+        }
+    ]
+}
